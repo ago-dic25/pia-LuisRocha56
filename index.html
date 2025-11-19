@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitesua</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="logo">
+        <a href="#menu2">
+            <img class="imagen_logo" src="images/logo.png">
+        </a>
+       
+        <nav  class="menu">
+            <ul>
+                <li><a href="#menu">MENÚ</a></li>
+                <li><a href="#nosotros">ABOUT</a></li>
+                <li><a href="#contacto">CONTACT</a></li>
+                <li><a href="questions.html">QUESTIONS</a></li>
+                <li><a href="ordenar.html">ORDER ONLINE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu2" class="section producto">
+        <div class="carousel">
+            <div class="slides">
+                <img src="images/Productos/P1.jpg" alt="Oreo">
+                <img src="images/Productos/P2.jpg" alt="Brownies">
+                <img src="images/Productos/P3.jpg" alt="Brownies chocolate">
+                <img src="images/Productos/P4.jpg" alt="Chocolate Nieve">
+            </div>
+        </div>
+    </section>
+
+    <section  id="nosotros" class="section nosotros">
+        <h2 class="color_about" >ABOUT</h2>
+            <p class="text_about">En Bitesua Home Bakery, creemos que cada bocado debe sentirse como un pequeño momento de felicidad. Nuestro proyecto nació del amor por la repostería artesanal y el deseo de compartir sabores que evocan recuerdos, emociones y calidez en cada persona que nos visita.
+            <br>
+            Cada uno de nuestros productos es elaborado a mano, cuidando cada detalle: desde la selección de ingredientes frescos y de alta calidad, hasta la presentación final que refleja nuestro compromiso con lo hecho en casa, con cariño y dedicación.
+            <br>
+            <br>
+            Más que una pastelería, somos un espacio donde los sabores se transforman en experiencias. Queremos acompañarte en tus momentos especiales, en tus celebraciones, en tus tardes de antojo y en cada ocasión donde un toque dulce haga la diferencia.
+            Gracias por formar parte de esta historia.
+            Bienvenido a Bitesua.</p>
+        
+            <img class="img_bakery" src="images/bakery.jpg">
+            <h2 class="color_about" >Chef Jennifer</h2>
+            <p class="text_about">
+                Jennifer es la chef pastelera principal y la mente creativa detrás de nuestra panadería. Con años de experiencia en la repostería artesanal, ha perfeccionado su oficio en algunas de las cocinas y pastelerías más reconocidas. Su formación comenzó en la cocina clásica, pero fue durante sus primeras experiencias en pequeños obradores de Francia e Italia donde descubrió su verdadera pasión por la pastelería.
+                <br>
+                <br>
+                A lo largo de su carrera, ha abrazado técnicas tradicionales mientras explora constantemente nuevos sabores y texturas. Su dedicación al detalle, el amor por los ingredientes de calidad y su respeto por los procesos cuidadosos y artesanales se reflejan en cada creación que sale de nuestra cocina.
+                <br>
+                <br>
+                Hoy lidera nuestro programa de pastelería con un enfoque en la autenticidad, la creatividad y la alegría de compartir postres excepcionales con nuestra comunidad.
+            </p>
+    </section>
+
+    <section id="sucursal" class="section producto">
+        <h2></h2>
+            <div class="carousel">
+                <div class="slides">
+                    <img src="images/sucursales/B1.jpg" alt="">
+                    <img src="images/sucursales/B2.jpg" alt="">
+                    <img src="images/sucursales/B3.jpg" alt="">
+                    <img src="images/sucursales/B4.jpg" alt="">
+                </div>
+            </div>
+    </section>
+
+    <section id="menu" class="section menus">
+        
+        <h2 class="color_descarga">
+            ¡Descarga nuestro menú a continuación!
+        </h2>
+
+        <div class="menu_buttons">
+            <button onclick="descargar('images/PDF/menu_guadalupe.pdf')" name="button_guadalupe" class="menu-btn">Guadalupe, Nuevo León</button>
+            <button onclick="descargar('images/PDF/menu_monterrey.pdf')" name="button_monterrey" class="menu-btn">Monterrey, Nuevo León</button>
+        </div>
+
+        <h2 class="color_descarga">
+            Si la descarga no inicia, haz <a class="download-link" onclick="descargar('images/PDF/menu_guadalupe.pdf')"> click </a> aquí.
+        </h2>
+        
+    </section>
+
+    <section id="producto" class="section producto">
+        <div class="carousel">
+            <div class="slides">
+                <img src="images/Productos/P1.jpg" alt="Oreo">
+                <img src="images/Productos/P2.jpg" alt="Brownies">
+                <img src="images/Productos/P3.jpg" alt="Brownies chocolate">
+                <img src="images/Productos/P4.jpg" alt="Chocolate Nieve">
+            </div>
+        </div>
+    </section>
+
+    <section  id="mapa"class="section mapa">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230133.88214307453!2d-100.36139204428677!3d25.676534834724627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8663305672c436b1%3A0x57c1c28b4e35f5ae!2sGuadalupe%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1763522210339!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer id="contacto" class="section contacto">
+        <h2>Contacto</h2>
+    </footer>
+
+    <!-- SCRIPT DEL HEADER QUE SE ENCOGE -->
+    <script src="script.js"></script>
+
+    <!-- GOOGLE MAPS -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=maps,marker" defer></script>
+
+</body>
+</html>

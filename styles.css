@@ -1,0 +1,228 @@
+/* ---------------------- */
+/*       ESTILOS BASE     */
+/* ---------------------- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ---------------------- */
+/*         HEADER         */
+/* ---------------------- */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   /* Logo izq — menú der */
+    align-items: center;
+
+    padding: 15px 40px;               /* Igual que cuando estaba “shrink” */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Siempre con sombra */
+}
+
+/* ---------------------- */
+/*          LOGO          */
+/* ---------------------- */
+
+.imagen_logo {
+    height: 45px;       /* Tamaño pequeño */
+    width: auto;
+}
+
+/* ---------------------- */
+/*         MENÚ           */
+/* ---------------------- */
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: flex-end;  /* Siempre a la derecha */
+    gap: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #b13b55;
+}
+
+/* ---------------------- */
+/*        RESPONSIVE       */
+/* ---------------------- */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* ---------------------- */
+/*        CARRUSEL        */
+/* ---------------------- */
+
+.producto {
+    background: #ffffff;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    animation: slide 15s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%, 20%   { margin-left: 0; }
+    25%, 45%  { margin-left: -100%; }
+    50%, 70%  { margin-left: -200%; }
+    75%, 95%  { margin-left: -300%; }
+}
+
+/* ---------------------- */
+/*    OTRAS SECCIONES     */
+/* ---------------------- */
+
+.producto2,
+.sucursal-img,
+.mapa {
+    background: #d9e2d3;
+}
+
+.nosotros {
+    background: #ffffff;
+    padding-top: 20px;
+}
+.menus {
+    background: #ffd7e0;
+    padding-top: 200px;
+    height: 50vh;
+    text-align: center;
+}
+
+.contacto {
+    background: #bfdcff;
+}
+
+.color_about {
+  color: #b13b55;
+}
+
+.color_descarga {
+  color: #b13b55;
+}
+
+.img_bakery {
+  width: 400px;
+  height: auto;
+  border-radius: 10%;
+}
+
+.text_about {
+    max-width: 700px;       /* Limita el ancho del texto para que no se vea demasiado largo */
+    margin: 40px auto;      /* Centra el texto horizontalmente y da espacio vertical */
+    text-align: center;     /* Centra el texto */
+    line-height: 1.8;       /* Aumenta el espacio entre líneas */
+    font-size: 18px;        /* Tamaño de texto elegante */
+    color: #b13b55;         /* Color suave parecido al de la página que mostraste */
+    font-weight: 300;       /* Letra delgada y moderna */
+}
+
+/* BOTONES */
+
+.menu_buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.menu-btn {
+    padding: 12px 28px;
+    background-color: #f5f0eb;  /* mismo estilo beige suave */
+    border: 2px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #b13b55;    
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* botón activo como en la imagen (azul oscuro) */
+.menu-btn.activado {
+    background-color: #b13b55;
+    color: white;
+}
+
+/* efecto hover */
+.menu-btn:hover {
+    background-color: #b13b55;
+    color: #fff;
+    border-color: #b13b55;
+}
+
+
+/* BOTONES */
+
+/* PALABRA CLICK*/
+
+.download-link {
+    color: #a22f4a;     /* color normal */
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.download-link:hover {
+    color: #11254e;     /* color al pasar mouse */
+}
+
+/* PALABRA CLICK */
